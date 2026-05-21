@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#5A9B6E" />
+  <meta name="robots" content="noindex" />
+  <title>Patagonia Showroom - Rental · Descargar APK</title>
+  <style>
+    :root {
+      --brand: #5A9B6E;
+      --brand-dark: #4A8159;
+      --bg: #FAFAF9;
+      --bg-card: #FFFFFF;
+      --fg: #2C2B29;
+      --muted: #6E6D6A;
+      --subtle: #9A9895;
+      --border: #E5E4E0;
+      --error: #B23A48;
+      --error-bg: #FDF2F4;
+      --radius: 16px;
+      --radius-sm: 12px;
+      --shadow: 0 2px 10px rgba(44, 43, 41, 0.05);
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                   "Helvetica Neue", Arial, system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.5;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 24px 16px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      max-width: 480px;
+      width: 100%;
+      padding: 28px 24px;
+      box-shadow: var(--shadow);
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 20px;
+    }
+    .logo {
+      width: 56px;
+      height: 56px;
+      border-radius: 12px;
+      flex-shrink: 0;
+      object-fit: cover;
+      background: var(--bg);
+    }
+    h1 {
+      font-size: 18px;
+      line-height: 1.3;
+      margin: 0 0 2px;
+      font-weight: 600;
+      color: var(--fg);
+    }
+    .version {
+      color: var(--muted);
+      font-size: 14px;
+      margin: 0;
+    }
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      width: 100%;
+      min-height: 52px;
+      background: var(--brand);
+      color: #FFFFFF;
+      text-align: center;
+      padding: 14px 16px;
+      border: none;
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.15s ease, transform 0.05s ease;
+      margin-top: 8px;
+    }
+    .btn:hover { background: var(--brand-dark); }
+    .btn:active { transform: scale(0.99); }
+    .btn:focus-visible {
+      outline: 3px solid rgba(90, 155, 110, 0.4);
+      outline-offset: 2px;
+    }
+    .btn[aria-disabled="true"] {
+      background: var(--subtle);
+      cursor: not-allowed;
+      pointer-events: none;
+    }
+    .meta {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      font-size: 13px;
+      color: var(--muted);
+      margin-top: 14px;
+    }
+    .meta span { white-space: nowrap; }
+    .notes {
+      font-size: 14px;
+      white-space: pre-wrap;
+      margin-top: 16px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+      color: var(--fg);
+    }
+    .notes:empty { display: none; }
+    .qr-section {
+      display: grid;
+      place-items: center;
+      gap: 8px;
+      margin: 20px 0 4px;
+      padding: 16px;
+      background: var(--bg);
+      border-radius: var(--radius-sm);
+    }
+    .qr-section canvas,
+    .qr-section img {
+      display: block;
+      border-radius: 8px;
+      background: #FFFFFF;
+      max-width: 100%;
+      height: auto;
+    }
+    .qr-caption {
+      font-size: 12px;
+      color: var(--subtle);
+      text-align: center;
+      margin: 0;
+    }
+    .qr-section:empty,
+    .qr-section[hidden] { display: none; }
+    .instructions {
+      margin-top: 20px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+      font-size: 13px;
+      color: var(--muted);
+    }
+    .instructions h2 {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--fg);
+      margin: 0 0 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .instructions ol {
+      margin: 0;
+      padding-left: 20px;
+    }
+    .instructions li { margin-bottom: 4px; }
+    .instructions .signature-note {
+      margin-top: 12px;
+      font-size: 12px;
+      color: var(--subtle);
+    }
+    .error-block {
+      display: none;
+      margin-top: 16px;
+      padding: 14px 16px;
+      background: var(--error-bg);
+      border: 1px solid #F4C7CC;
+      border-radius: var(--radius-sm);
+      color: var(--error);
+      font-size: 14px;
+    }
+    .error-block strong { display: block; margin-bottom: 4px; }
+    .error-block.is-visible { display: block; }
+    .skeleton { color: var(--subtle); }
+    [data-state="loading"] .skeleton { opacity: 0.6; }
+    [data-state="error"] .btn,
+    [data-state="error"] .qr-section,
+    [data-state="error"] .meta,
+    [data-state="error"] .notes { display: none; }
+    [data-state="coming-soon"] .qr-section,
+    [data-state="coming-soon"] .meta,
+    [data-state="coming-soon"] .notes { display: none; }
+    @media (max-width: 380px) {
+      body { padding: 16px 12px; }
+      .card { padding: 22px 18px; }
+      .header { gap: 12px; margin-bottom: 16px; }
+      .logo { width: 48px; height: 48px; }
+      h1 { font-size: 17px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .btn { transition: none; }
+    }
+  </style>
+</head>
+<body>
+  <main class="card" id="card" data-state="loading" aria-busy="true">
+    <div class="header">
+      <img src="./assets/logo.png" alt="" class="logo" width="56" height="56" />
+      <div>
+        <h1>Patagonia Showroom - Rental</h1>
+        <p class="version skeleton" id="version">Cargando…</p>
+      </div>
+    </div>
+
+    <a
+      class="btn"
+      id="downloadBtn"
+      href="#"
+      download
+      rel="noopener"
+      aria-disabled="true"
+    >Descargar APK</a>
+
+    <div class="meta">
+      <span id="size" class="skeleton">—</span>
+      <span id="date" class="skeleton">—</span>
+    </div>
+
+    <div class="notes" id="notes"></div>
+
+    <div class="qr-section" id="qrSection" hidden>
+      <canvas id="qr" width="192" height="192" aria-label="Código QR para abrir esta página en otro dispositivo"></canvas>
+      <p class="qr-caption">Escaneá para abrir esta página en tu tablet o teléfono</p>
+    </div>
+
+    <div class="instructions" id="instructions">
+      <h2>Cómo instalar</h2>
+      <ol>
+        <li>Tocá <strong>Descargar APK</strong>. El archivo va a quedar en tu carpeta de Descargas.</li>
+        <li>Habilitá <em>Instalar apps de fuentes desconocidas</em> para tu navegador en <strong>Ajustes → Apps → Acceso especial → Instalar apps desconocidas</strong>.</li>
+        <li>Abrí el archivo <code>.apk</code> descargado y seguí los pasos del instalador.</li>
+        <li>Si Android te avisa por seguridad, tocá <strong>Instalar de todas formas</strong>.</li>
+      </ol>
+      <p class="signature-note">
+        Esta app está firmada con el certificado privado del equipo (no viene de Play Store). Es esperable que Android te muestre una advertencia la primera vez — podés instalar tranquilo.
+      </p>
+    </div>
+
+    <div class="error-block" id="errorBlock" role="alert" aria-live="polite">
+      <strong>No pudimos cargar la última versión.</strong>
+      <span id="errorDetail">Revisá tu conexión y volvé a intentar en unos minutos.</span>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.4/build/qrcode.min.js" defer></script>
+  <script>
+    (function () {
+      "use strict";
+
+      var $ = function (id) { return document.getElementById(id); };
+
+      var card        = $("card");
+      var versionEl   = $("version");
+      var downloadBtn = $("downloadBtn");
+      var sizeEl      = $("size");
+      var dateEl      = $("date");
+      var notesEl     = $("notes");
+      var qrSection   = $("qrSection");
+      var qrCanvas    = $("qr");
+      var errorBlock  = $("errorBlock");
+      var errorDetail = $("errorDetail");
+
+      function setState(state) {
+        card.setAttribute("data-state", state);
+        card.setAttribute("aria-busy", state === "loading" ? "true" : "false");
+      }
+
+      function showError(message) {
+        setState("error");
+        if (message) errorDetail.textContent = message;
+        errorBlock.classList.add("is-visible");
+      }
+
+      function formatSize(bytes) {
+        if (!bytes || bytes <= 0) return "";
+        var mb = bytes / (1024 * 1024);
+        return mb.toFixed(1).replace(".", ",") + " MB";
+      }
+
+      function formatDate(iso) {
+        if (!iso) return "";
+        var d = new Date(iso);
+        if (isNaN(d.getTime()) || d.getUTCFullYear() < 2000) return "";
+        try {
+          return d.toLocaleDateString("es-AR", {
+            day: "2-digit",
+            month: "long",
+            year: "numeric"
+          });
+        } catch (_) {
+          return d.toLocaleDateString();
+        }
+      }
+
+      function renderManifest(m) {
+        // Coming-soon path: version 0.0.0 means no real release yet.
+        if (!m || !m.version || m.version === "0.0.0") {
+          setState("coming-soon");
+          versionEl.classList.remove("skeleton");
+          versionEl.textContent = "Próximamente";
+          downloadBtn.textContent = "Próximamente";
+          downloadBtn.setAttribute("aria-disabled", "true");
+          downloadBtn.removeAttribute("href");
+          notesEl.textContent = m && m.releaseNotes
+            ? m.releaseNotes
+            : "Aún no hay versión publicada. Volvé pronto.";
+          notesEl.style.display = "block";
+          return;
+        }
+
+        // Normal render.
+        setState("ready");
+        versionEl.classList.remove("skeleton");
+        versionEl.textContent = "Versión " + m.version;
+
+        sizeEl.classList.remove("skeleton");
+        sizeEl.textContent = formatSize(m.apkSize);
+
+        dateEl.classList.remove("skeleton");
+        dateEl.textContent = formatDate(m.releasedAt);
+
+        if (m.releaseNotes && m.releaseNotes.trim()) {
+          notesEl.textContent = m.releaseNotes;
+        }
+
+        if (m.apkUrl) {
+          downloadBtn.setAttribute("href", m.apkUrl);
+          downloadBtn.removeAttribute("aria-disabled");
+        } else {
+          downloadBtn.setAttribute("aria-disabled", "true");
+        }
+
+        renderQR();
+      }
+
+      function renderQR() {
+        if (typeof window.QRCode === "undefined" || !qrCanvas) return;
+        try {
+          window.QRCode.toCanvas(
+            qrCanvas,
+            window.location.href,
+            {
+              width: 192,
+              margin: 1,
+              color: { dark: "#2C2B29", light: "#FFFFFF" },
+              errorCorrectionLevel: "M"
+            },
+            function (err) {
+              if (err) return; // silently skip QR if rendering fails
+              qrSection.hidden = false;
+            }
+          );
+        } catch (_) {
+          // QR is non-critical; ignore.
+        }
+      }
+
+      function load() {
+        // Cache-bust so editors immediately see new versions.
+        fetch("./latest.json", { cache: "no-store" })
+          .then(function (res) {
+            if (!res.ok) {
+              throw new Error("HTTP " + res.status);
+            }
+            return res.json();
+          })
+          .then(renderManifest)
+          .catch(function (err) {
+            var msg = err && err.message
+              ? "Detalle técnico: " + err.message
+              : "Revisá tu conexión y volvé a intentar.";
+            showError(msg);
+          });
+      }
+
+      // If the qrcode lib is still loading (defer), wait for it before kicking off.
+      if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", load);
+      } else {
+        load();
+      }
+    })();
+  </script>
+</body>
+</html>
