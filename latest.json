@@ -5,6 +5,6 @@
   "apkSize": 131398800,
   "sha256": "f2eaf93be4709adfc32d33846ef542e7c29ef7c8b6b263906376c139ffcc1662",
   "releasedAt": "2026-05-22T20:25:38Z",
-  "releaseNotes": "Version 1.2.0",
+  "releaseNotes": "- Nuevo: la app ahora detecta automáticamente cuando hay una versión nueva y te deja actualizarla desde la misma pantalla.\n- Mejoras internas y correcciones menores.",
   "minAndroidVersion": "7.0"
 }
