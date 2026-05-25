@@ -1,10 +1,10 @@
 {
-  "version": "1.2.1",
+  "version": "1.2.2",
   "versionCode": null,
-  "apkUrl": "https://github.com/kyojinlabs/rental-app-downloads/releases/download/v1.2.1/rentalapp-v1.2.1.apk",
-  "apkSize": 131404952,
-  "sha256": "8ca301b722f1343600413050efdfb643067228448b85e5797e8adb6c855dd778",
-  "releasedAt": "2026-05-22T22:28:54Z",
-  "releaseNotes": "- Nuevo: enlace de onboarding en el menú para aprender a usar la app.\n- Mejoras internas y correcciones menores.",
+  "apkUrl": "https://github.com/kyojinlabs/rental-app-downloads/releases/download/v1.2.2/rentalapp-v1.2.2.apk",
+  "apkSize": 131940752,
+  "sha256": "6578aaeb321332e376c0b8d620125c134f245d0da1b73242a8855cac063bf079",
+  "releasedAt": "2026-05-25T13:27:53Z",
+  "releaseNotes": "Version 1.2.2",
   "minAndroidVersion": "7.0"
 }
