@@ -1,10 +1,10 @@
 {
-  "version": "1.3.0",
+  "version": "1.3.1",
   "versionCode": null,
-  "apkUrl": "https://github.com/kyojinlabs/rental-app-downloads/releases/download/v1.3.0/rentalapp-v1.3.0.apk",
-  "apkSize": 131984480,
-  "sha256": "cebfbbd9559c55e30ff0a55aac5ec456ccdd26768274ee55d6a8e5fd2eed39c2",
-  "releasedAt": "2026-05-26T22:17:26Z",
-  "releaseNotes": "Novedades de la versión 1.3.0:\n\n- Cashier: nueva sección para ver los ítems de la orden y su estado (solo lectura).\n- Resumen del admin: gráfico de personas por nacionalidad.\n- Renombrado a Nuevo alquiler (antes Nueva venta) en inicio, navegación y confirmación.\n- Devoluciones: corregido el scroll al arrastrar sobre las tarjetas en web.\n- Carrito: panel más ancho y legible.",
+  "apkUrl": "https://github.com/kyojinlabs/rental-app-downloads/releases/download/v1.3.1/rentalapp-v1.3.1.apk",
+  "apkSize": 132010500,
+  "sha256": "e1f94e48da5c6accd4d4c95c5cd5cf64fb36b10999da502da22f5cceda40017d",
+  "releasedAt": "2026-05-27T14:33:47Z",
+  "releaseNotes": "Version 1.3.1",
   "minAndroidVersion": "7.0"
 }
