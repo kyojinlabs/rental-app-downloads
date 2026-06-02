@@ -1,10 +1,10 @@
 {
-  "version": "1.3.2",
+  "version": "1.4.0",
   "versionCode": null,
-  "apkUrl": "https://github.com/kyojinlabs/rental-app-downloads/releases/download/v1.3.2/rentalapp-v1.3.2.apk",
-  "apkSize": 132010820,
-  "sha256": "2e8f911b83985be3f5fd6ddec827ae611209905c05176432a1c65c64bd3e81dd",
-  "releasedAt": "2026-05-27T19:27:55Z",
-  "releaseNotes": "Novedades de la versión 1.3.2:\n\n- Devoluciones: corregido el combo que quedaba en blanco al deshacer una devolución (Android).",
+  "apkUrl": "https://github.com/kyojinlabs/rental-app-downloads/releases/download/v1.4.0/rentalapp-v1.4.0.apk",
+  "apkSize": 132084128,
+  "sha256": "d1d67c6ce1f0eda04ac1b48a3aeb2d1ba1cb909757e5804828131ca9d3081810",
+  "releasedAt": "2026-06-02T23:08:50Z",
+  "releaseNotes": "Version 1.4.0",
   "minAndroidVersion": "7.0"
 }
