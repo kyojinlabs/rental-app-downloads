@@ -1,10 +1,10 @@
 {
-  "version": "1.4.0",
-  "versionCode": 10,
-  "apkUrl": "https://github.com/kyojinlabs/rental-app-downloads/releases/download/v1.4.0/rentalapp-v1.4.0.apk",
-  "apkSize": 132084128,
-  "sha256": "d1d67c6ce1f0eda04ac1b48a3aeb2d1ba1cb909757e5804828131ca9d3081810",
-  "releasedAt": "2026-06-02T23:08:50Z",
-  "releaseNotes": "Devoluciones: agregar items y bundles en la estación de devolución, tarjetas unificadas, referencia de swap con días/días gratis/fecha. Admin: reorganizado en Gestión/Reportes con subpestañas, drag & drop de productos y combos, vista lista de combos, reportes filtrables por sucursal. Caja: cierre de orden con saldo pendiente (write-off). Órdenes: panel de notas multi-estación, username en navbar, badge de órdenes canceladas. Calendario: stat-cards filtrables por rango. Correcciones varias de zonas horarias y fechas.",
+  "version": "1.4.1",
+  "versionCode": null,
+  "apkUrl": "https://github.com/kyojinlabs/rental-app-downloads/releases/download/v1.4.1/rentalapp-v1.4.1.apk",
+  "apkSize": 132145860,
+  "sha256": "5ebb56ed06db2b7b15310ed3f2e66517e09d030998e14d51a7f5400c41394d0d",
+  "releasedAt": "2026-06-12T14:59:33Z",
+  "releaseNotes": "Version 1.4.1",
   "minAndroidVersion": "7.0"
 }
