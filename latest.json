@@ -1,10 +1,10 @@
 {
   "version": "1.4.2",
-  "versionCode": null,
+  "versionCode": 12,
   "apkUrl": "https://github.com/kyojinlabs/rental-app-downloads/releases/download/v1.4.2/rentalapp-v1.4.2.apk",
   "apkSize": 132154644,
   "sha256": "d836981ceaabc2909bfb63b26c02df6a527fdb4450691c44d283b6d25c5f7789",
   "releasedAt": "2026-06-14T23:26:44Z",
-  "releaseNotes": "Version 1.4.2",
+  "releaseNotes": "- Dashboard y Reportes ahora se filtran por sucursal (nuevo selector de sucursal).\n- Cada fila de reporte indica de qué sucursal es.\n- \"Pasajeros\" ahora cuenta personas reales, no órdenes.\n- Filtros rápidos de fecha (Hoy / 7 días / 30 días) en Reportes.\n- Correcciones de zona horaria en fechas de reportes.",
   "minAndroidVersion": "7.0"
 }
