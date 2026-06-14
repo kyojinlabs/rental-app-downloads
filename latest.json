@@ -1,10 +1,10 @@
 {
-  "version": "1.4.1",
-  "versionCode": 11,
-  "apkUrl": "https://github.com/kyojinlabs/rental-app-downloads/releases/download/v1.4.1/rentalapp-v1.4.1.apk",
-  "apkSize": 132145860,
-  "sha256": "5ebb56ed06db2b7b15310ed3f2e66517e09d030998e14d51a7f5400c41394d0d",
-  "releasedAt": "2026-06-12T14:59:33Z",
-  "releaseNotes": "Experiencias: nuevo campo de descuento en reservas, reflejado en detalles financieros y previews. Órdenes: desglose detallado del subtotal de alquiler y de recargos por devolución tardía; escritura de items centralizada; admin puede eliminar el documento de identidad desde el detalle de la orden. Devoluciones: items devueltos en modo solo-lectura en la estación de equipos, timestamps de entrega y devolución por item, mejor detección de intercambios pendientes y manejo de incidentes. Caja: cierre de orden con saldo pendiente (write-off) y modales asociados. Reportes: devoluciones agrupadas por producto, métodos de pago traducidos y filtro de fechas del último año. Calendario de devoluciones: resumen por item (a devolver / devuelto). Correcciones varias de precios, nombres de cliente, vouchers y detalles visuales.",
+  "version": "1.4.2",
+  "versionCode": null,
+  "apkUrl": "https://github.com/kyojinlabs/rental-app-downloads/releases/download/v1.4.2/rentalapp-v1.4.2.apk",
+  "apkSize": 132154644,
+  "sha256": "d836981ceaabc2909bfb63b26c02df6a527fdb4450691c44d283b6d25c5f7789",
+  "releasedAt": "2026-06-14T23:26:44Z",
+  "releaseNotes": "Version 1.4.2",
   "minAndroidVersion": "7.0"
 }
