@@ -1,10 +1,10 @@
 {
   "version": "1.4.3",
-  "versionCode": null,
+  "versionCode": 13,
   "apkUrl": "https://github.com/kyojinlabs/rental-app-downloads/releases/download/v1.4.3/rentalapp-v1.4.3.apk",
   "apkSize": 132154800,
   "sha256": "213eadfac0e8e8d2e35206412925aa4e48455044ac3c261e3c818cfd81847172",
   "releasedAt": "2026-06-15T13:45:05Z",
-  "releaseNotes": "Version 1.4.3",
+  "releaseNotes": "Correcciones: scroll en las listas de Gestión (productos y combos) en mobile y crash al entrar a Administración. Conteo de días de alquiler con convención de calendario inclusivo. Atribución del usuario identificado por PIN en alta de productos en equipos, ABM de incidentes y renovación de items.",
   "minAndroidVersion": "7.0"
 }
