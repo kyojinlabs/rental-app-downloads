@@ -1,10 +1,10 @@
 {
   "version": "1.4.4",
-  "versionCode": null,
+  "versionCode": 14,
   "apkUrl": "https://github.com/kyojinlabs/rental-app-downloads/releases/download/v1.4.4/rentalapp-v1.4.4.apk",
   "apkSize": 132173072,
   "sha256": "39bd9e9850f7a1e89097e6d9f6c3db58ac794f655041fcd59eae994e3823b150",
   "releasedAt": "2026-06-17T04:12:29Z",
-  "releaseNotes": "Version 1.4.4",
+  "releaseNotes": "Permisos reorganizados y nueva pestaña Pendientes con su control de acceso. Fechas y tickets en horario de Argentina (ART): corrige la fecha de devolución que aparecía un día antes. Conteo de días de alquiler con convención de calendario inclusiva (incluye swaps). Combos: total, días y días gratis en el encabezado del bundle en pantallas de orden; se oculta el precio individual dentro del combo. Partners: eliminación con reasignación de órdenes. Actualización del endpoint base del API.",
   "minAndroidVersion": "7.0"
 }
