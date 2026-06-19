@@ -1,10 +1,10 @@
 {
-  "version": "1.4.5",
-  "versionCode": 15,
-  "apkUrl": "https://github.com/kyojinlabs/rental-app-downloads/releases/download/v1.4.5/rentalapp-v1.4.5.apk",
-  "apkSize": 132175712,
-  "sha256": "cffd639185d7fd964000dee2c1adc394deecb6ec176143607cfeb652f385d27d",
-  "releasedAt": "2026-06-18T01:48:36Z",
-  "releaseNotes": "Devoluciones: chip de estado de pago en la barra de resumen y un único botón para descartar la alerta de saldo pendiente. Caja: usa el saldo restante para la redirección de orden saldada. Equipos: el alta de item toma por default la fecha de inicio del alquiler de la orden. Correcciones: combos swapeados que aparecían en el desglose de alquiler (estado de items unificado) y la referencia de orden ahora se pasa a mayúsculas al buscar.",
+  "version": "1.4.6",
+  "versionCode": null,
+  "apkUrl": "https://github.com/kyojinlabs/rental-app-downloads/releases/download/v1.4.6/rentalapp-v1.4.6.apk",
+  "apkSize": 132178788,
+  "sha256": "507ad67f32448067ae8f795185c2c5517657287a39fcb745aba70966b3e7fd1d",
+  "releasedAt": "2026-06-19T13:18:04Z",
+  "releaseNotes": "Version 1.4.6",
   "minAndroidVersion": "7.0"
 }
