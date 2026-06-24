@@ -1,10 +1,10 @@
 {
-  "version": "1.4.6",
-  "versionCode": 16,
-  "apkUrl": "https://github.com/kyojinlabs/rental-app-downloads/releases/download/v1.4.6/rentalapp-v1.4.6.apk",
-  "apkSize": 132178788,
-  "sha256": "507ad67f32448067ae8f795185c2c5517657287a39fcb745aba70966b3e7fd1d",
-  "releasedAt": "2026-06-19T13:18:04Z",
-  "releaseNotes": "Seguridad de estación: el actor identificado por PIN se cierra solo tras 15 minutos de inactividad y al salir de la pantalla. Órdenes: se elimina el estado fantasma \"cerrada\"; cálculo de vencidos en horario Argentina (ART). Devoluciones: alerta de saldo pendiente también en la estación web; chips de resumen simplificados. Combos: se agrupan por instancia en la orden (no por definición) y se corrigen instancias duplicadas que se colapsaban en confirmación.",
+  "version": "1.4.7",
+  "versionCode": null,
+  "apkUrl": "https://github.com/kyojinlabs/rental-app-downloads/releases/download/v1.4.7/rentalapp-v1.4.7.apk",
+  "apkSize": 132196244,
+  "sha256": "bd86625ab75186b4416557df029d20341c3b58965e2cc4c1a78230e050664e95",
+  "releasedAt": "2026-06-24T23:40:00Z",
+  "releaseNotes": "Version 1.4.7",
   "minAndroidVersion": "7.0"
 }
