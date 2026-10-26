@@ -1,10 +1,10 @@
 {
-  "version": "1.4.12",
-  "versionCode": null,
-  "apkUrl": "https://github.com/kyojinlabs/rental-app-downloads/releases/download/v1.4.12/rentalapp-v1.4.12.apk",
-  "apkSize": 133220028,
-  "sha256": "21a6cc7afe5d66901e0de9ccaea13dc13d94e5f4cbc5515cf518ac424c6c9e7c",
-  "releasedAt": "2026-07-27T15:21:39Z",
-  "releaseNotes": "Rollback: vuelve al código estable de la v1.4.10. Instalá sobre la 1.4.11 sin desinstalar.",
+  "version": "1.5.0",
+  "versionCode": 10500,
+  "apkUrl": "https://github.com/kyojinlabs/rental-app-downloads/releases/download/v1.5.0/rentalapp-v1.5.0.apk",
+  "apkSize": 131019242,
+  "sha256": "9761ab4fb93ab9b383e79ca3723f455c54717381ae8ffa6e6e373ab8e2407350",
+  "releasedAt": "2026-10-26T03:08:04Z",
+  "releaseNotes": "Version 1.5.0",
   "minAndroidVersion": "7.0"
 }
